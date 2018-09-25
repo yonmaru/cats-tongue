@@ -49,7 +49,13 @@
 	<article id="article">
 		<section id="section0" class="section section-about">
 			<div class="inner">
-				<div class="about-img wow fadeInUp" data-wow-delay="0.6s"><img src="img/about/img01.png" alt=""></div>
+				<div class="slider about-img wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="img/about/img01-1.png" alt="">
+                    <img src="img/about/img01-2.png" alt="">
+                    <img src="img/about/img01-3.png" alt="">
+                    <img src="img/about/img01-4.png" alt="">
+                    <img src="img/about/img01-5.png" alt="">
+                </div>
                 <h2 class="title wow fadeInUp" data-wow-delay="1.4s">About</h2>
                 <p class="wow fadeInUp" data-wow-delay="1.6s">今まで石垣島にはなかった<br>上質なサービスと高級感のある<br>落ち着いた雰囲気の大人の隠れ家。</p>
                 <p class="wow fadeInUp" data-wow-delay="1.8s">細部にもこだわったくつろぎの空間<br>最上質なお時間をお過ごしください。</p>
@@ -146,13 +152,13 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="floorimages">
+            <div class="floorimages">
                 <ul>
                     <li class="wow fadeInUp" data-wow-offset="120" data-wow-delay="0.4s"><a href="img/floor-price/img02.png"><img src="img/floor-price/img02.png" alt=""></a></li>
                     <li class="wow fadeInUp" data-wow-offset="120" data-wow-delay="0.8s"><a href="img/floor-price/img03.png"><img src="img/floor-price/img03.png" alt=""></a></li>
                     <li class="wow fadeInUp" data-wow-offset="120" data-wow-delay="1.2s"><a href="img/floor-price/img04.png"><img src="img/floor-price/img04.png" alt=""></a></li>
                 </ul>
-            </div>-->
+            </div>
             <div class="floorbox floorbox2">
                 <div class="floorcontents">
                     <img src="img/floor-price/img05.png" alt="" class="floorimg wow fadeInRight" data-wow-offset="200">
@@ -534,6 +540,21 @@ function mypreload() {
 }
 mypreload('img/about/bg01.png','img/access/bg01.png','img/floor-price/bg01.png', 'img/news/bg01.png', 'img/recruit/bg01.png', 'img/contact/bg01.png');
 
+</script>
+<link href="/js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="/js/slick/slick.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/slick/slick.min.js"></script>
+<script type="text/javascript">
+$('.slider').slick({
+    arrows:false,
+    autoplay:true,
+    autoplaySpeed:3000,
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    fade: true,
+    cssEase: 'linear'
+});    
 </script>
 </body>
 </html>

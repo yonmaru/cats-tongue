@@ -662,3 +662,12 @@ background-color: rgba(210,188,184,0.20);
 .section-contact input.submit {
 background-color: rgba(179,140,133,0.20);
 }
+
+
+.slider {
+    opacity: 0;
+    transition: 3s;
+}
+.slick-initialized {
+    opacity: 1
+}
